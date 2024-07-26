@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@font-face {
+  font-family: 'Monograf';
+  src: local('Monograf Text Bold'), local('Monograf-Text-Bold'),
+      url('./font/MonografTextBold.woff2') format('woff2'),
+      url('./font/MonografTextBold.woff') format('woff'),
+      url('./font/MonografTextBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Monograf";
+  box-sizing: border-box;
+  text-align: center;
+  user-select: none;
+} #landing {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(242,170,40);
+  background-image: url('./img/landing-taxi.jpeg');
+  background-size: cover;
+  color: hsl(0, 0%, 100%);
+  box-shadow: inset black 128px 128px 128px -64px;
+} #landing-texts {
+  margin-top: 64px;
+  margin-left: 32px;
+  margin-right: 32px;
+  text-shadow: 1px 1px 3px black;
+} #header {
+  padding: 24px 64px;
+} .header-link {
+  padding: 0px 24px;
+} #brand-logo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+} #account * {
+  padding: 6px 12px;
+  margin: 0 16px;
+  border-radius: 8px;
+} #login {
+  background: black;
+  color: white;
+} #sign-up {
+  background: white;
+  color: black;
+} #main-text {
+  font-size: 5em;
+} #main-text-highlight {
+  color: lightskyblue;
+} #subtext {
+  font-size: 2em;
+  margin-top: 32px;
+} #app-buttons {
+  margin-top: 24px;
+} .app-button {
+  background: black;
+  padding: 4px 8px;
+  margin: 8px;
+  border-radius: 4px;
+} #download-count {
+  margin-top: 32px;
+} .download-pfp {
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+  margin-left: -40px;
+} #download-pfps {
+  margin-left: 40px;
+  margin-right: 12px;
+} #pagination-header {
+  text-align: center;
+  font-size: 3em;
+  margin: 64px;
+} #pagination-page {
+  width: 100vw;
+} .pagination-card {
+  width: 384px;
+  height: 512px;
+  box-shadow: 0 0 64px 16px lightgray;
+  border-radius: 32px;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+} #pagination {
+  width: 100vw;
+} .pagination-card-title {
+  font-size: 32px;
+} .pagination-card-type {
+  text-transform: capitalize;
+} #pagination-controls {
+  margin: 32px;
+} .pagination-control {
+  width: 50px;
+  font-size: 32px;
+  margin: 8px;
+  cursor: pointer;
+}

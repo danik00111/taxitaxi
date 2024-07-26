@@ -1,0 +1,86 @@
+<!-- Template source: https://dribbble.com/shots/24099977-Taxi-Booking-Landing-Page-Design/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxiTaxi - always there to take you anywhere</title>
+  <style>
+    flex { display: flex }
+    [alignitems="center"] { align-items: center }
+    [jcon="center"] { justify-content: center }
+    [jcon="flex-start"] { justify-content: flex-start }
+    [jcon="flex-end"] { justify-content: flex-end }
+    [jcon="spr"] { justify-content: space-around }
+    [jcon="spb"] { justify-content: space-between }
+    [jcon="spe"] { justify-content: space-evenly }
+    [dir="column"] { flex-direction: column }
+  </style>
+  <link rel="stylesheet" href="./sty.css">
+</head>
+<body>
+  <div id="landing">
+    <flex id="header" alignitems="center" jcon="spb">
+      <flex id="brand-title" alignitems="center">
+        <i id="brand-logo" class="fa-solid fa-taxi"></i>
+        <div id="brand-name">TaxiTaxi</div>
+      </flex>
+      <flex id="header-links" alignitems="center" jcon="spb">
+        <a class="header-link">Home</a>
+        <a class="header-link">Service</a>
+        <a class="header-link">Security</a>
+        <a class="header-link">About</a>
+        <a class="header-link">Contact Us</a>
+      </flex>
+      <flex id="account">
+        <div id="login">Login</div>
+        <div id="sign-up">Sign Up</div>
+      </flex>
+    </flex>
+    <flex id="landing-texts" dir="column" jcon="spr">
+      <div id="main-text" style="text-transform:capitalize">
+        Always there to<br>take you&nbsp;<span id="main-text-highlight">Anywhere</span>
+      </div>
+      <div id="subtext">Choose from a range of categories and prices.</div>
+      <flex id="app-buttons" jcon="center">
+        <div class="app-button"><i class="fa-brands fa-apple"></i> App Store</div>
+        <div class="app-button"><i class="fa-brands fa-google-play"></i> Play Market</div>
+      </flex>
+      <flex id="download-count" alignitems="center" jcon="center">
+        <div id="download-pfps">
+          <img class="download-pfp" src='./img/pfps/kovalski-22.jpg'></img>
+          <img class="download-pfp" src='./img/pfps/user-5729201.jpeg'></img>
+          <img class="download-pfp" src='./img/pfps/morra-may.jpg'></img>
+        </div>
+        <flex id="download-count-text" dir="column" jcon="center">
+          <div id="downloads-count-number">4.5k</div>
+          <div>Worldwide downloads</div> <!-- im literally out of id-eas LMAO -->
+        </flex>
+      </flex>
+    </flex>
+  </div>
+  <flex id="pagination-page" dir="column">
+    <div id="pagination-header">Choose from a variety of options</div>
+    <flex id="pagination" alignitems="center" jcon="spr">
+      <flex class="pagination-card">
+        <div class="pagination-card-title"></div>
+        <div class="pagination-card-type"></div>
+      </flex>
+      <flex class="pagination-card">
+        <div class="pagination-card-title"></div>
+        <div class="pagination-card-type"></div>
+      </flex>
+      <flex class="pagination-card">
+        <div class="pagination-card-title"></div>
+        <div class="pagination-card-type"></div>
+      </flex>
+    </flex>
+    <flex id="pagination-controls" alignitems="center" jcon="center">
+      <div class="pagination-control" id="pagination-prev">&lt;</div>
+      <div class="pagination-control" id="pagination-next">&gt;</div>
+    </flex>
+  </flex>
+  <script src="https://kit.fontawesome.com/6d7cb93199.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
