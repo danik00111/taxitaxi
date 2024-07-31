@@ -59,8 +59,23 @@
       </flex>
     </flex>
   </div>
-  <flex id="pagination-page" dir="column">
+  <flex id="pagination-page" dir="column" alignitems="center">
     <div id="pagination-header">Choose from a variety of options</div>
+    <div id="filters">
+      <select name="filter" id="filter" style="width:100px;text-align:left;outline:2px black">
+        <option>Any</option>
+        <option disabled>Type</option>
+        <option>Econome</option>
+        <option>Standart</option>
+        <option>Comfort</option>
+        <option disabled>Mark</option>
+        <option>Toyota</option>
+        <option>Audi</option>
+        <option>Nissan</option>
+        <option>BMW</option>
+      </select>
+      <input id="search" placeholder="Search...">
+    </div>
     <flex id="pagination" alignitems="center" jcon="spr">
       <flex class="pagination-card">
         <div class="pagination-card-title"></div>
@@ -77,6 +92,7 @@
     </flex>
   </flex>
   <script src="https://kit.fontawesome.com/6d7cb93199.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./script.js"></script>
 </body>
 </html>

@@ -76,9 +76,15 @@
 } #pagination-header {
   text-align: center;
   font-size: 3em;
-  margin: 64px;
+  margin-top: 32px;
 } #pagination-page {
   width: 100vw;
+} #filter {
+  margin: 32px;
+} #search {
+  outline: 1px black;
+  border: 1px black;
+  border-radius: 4px;
 } .pagination-card {
   width: 384px;
   height: 384px;
