@@ -7,8 +7,7 @@
       url('./font/MonografTextBold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-}
-* {
+} * {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,7 +23,7 @@
   background-image: url('./img/landing-taxi.jpeg');
   background-size: cover;
   color: hsl(0, 0%, 100%);
-  box-shadow: inset black 128px 128px 128px -64px;
+  box-shadow: inset black 0px 160px 128px -64px;
 } #landing-texts {
   margin-top: 64px;
   margin-left: 32px;
@@ -34,11 +33,14 @@
   padding: 24px 64px;
 } .header-link {
   padding: 0px 24px;
+  cursor: pointer;
 } #brand-logo {
   width: 24px;
   height: 24px;
   border-radius: 50%;
   margin-right: 8px;
+} #brand-title {
+  cursor: pointer;
 } #account * {
   padding: 6px 12px;
   margin: 0 16px;
@@ -46,9 +48,11 @@
 } #login {
   background: black;
   color: white;
+  cursor: pointer;
 } #sign-up {
   background: white;
   color: black;
+  cursor: pointer;
 } #main-text {
   font-size: 5em;
 } #main-text-highlight {
@@ -63,6 +67,7 @@
   padding: 4px 8px;
   margin: 8px;
   border-radius: 4px;
+  cursor: pointer;
 } #download-count {
   margin-top: 32px;
 } .download-pfp {
@@ -79,12 +84,13 @@
   margin-top: 32px;
 } #pagination-page {
   width: 100vw;
-} #filter {
+} #filters {
   margin: 32px;
-} #search {
-  outline: 1px black;
-  border: 1px black;
+} #filters * {
   border-radius: 4px;
+  box-shadow: inset 0 0 2px 2px gray;
+  margin: 0px 16px;
+  height: 24px;
 } .pagination-card {
   width: 384px;
   height: 384px;
@@ -108,4 +114,16 @@
   font-size: 32px;
   margin: 8px;
   cursor: pointer;
+  border-radius: 4px;
+  transition: box-shadow 0.5s;
+  box-shadow: inset 0 0 2px 2px gray;
+} .pagination-control:hover {
+  transition: box-shadow 0.5s;
+  box-shadow: inset 0 0 4px 4px gray;
+} #info {
+  height: 100vh;
+  background: #111;
+  color: #aaa;
+} #info-header {
+  font-size: 3em;
 }
