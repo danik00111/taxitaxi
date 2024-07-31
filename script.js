@@ -12,7 +12,7 @@ const taxis = [{
   imgsrc: "taxi3.jpg",
 },{
   type: "Econome",
-  mark: "Generation Retro UFO",
+  mark: "Nissan",
   imgsrc: "taxi4.png",
 },{
   type: "Standart",
@@ -56,7 +56,7 @@ while(--i > 0){
   taxis[j] = taxis[i];
   taxis[i] = temp;
 }
-const page = (pageid,arr=taxis,perpage=3) => [...arr].slice(perpage*(pageid-1), perpage*pageid);
+const page = (pageid,arr=taxis,perpage=2) => [...arr].slice(perpage*(pageid-1), perpage*pageid);
 let currpage = 1;
 const upd = () => { document.getElementById('pagination').innerHTML = page(currpage).map(template).join('') };
 const template = (obj) => `

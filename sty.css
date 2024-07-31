@@ -81,7 +81,7 @@
   width: 100vw;
 } .pagination-card {
   width: 384px;
-  height: 512px;
+  height: 384px;
   box-shadow: 0 0 64px 16px lightgray;
   border-radius: 32px;
   align-items: center;
