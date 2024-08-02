@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TaxiTaxi - always there to take you anywhere</title>
   <style>
-    flex { display: flex }
-    [alignitems="center"] { align-items: center }
+    flex { display: flex; align-items: center }
     [jcon="center"] { justify-content: center }
     [jcon="flex-start"] { justify-content: flex-start }
     [jcon="flex-end"] { justify-content: flex-end }
@@ -20,17 +19,23 @@
 </head>
 <body>
   <div id="landing">
-    <flex id="header" alignitems="center" jcon="spb">
-      <flex id="brand-title" alignitems="center">
+    <flex id="header" jcon="spb">
+      <flex id="brand-title">
         <i id="brand-logo" class="fa-solid fa-car"></i>
         <div id="brand-name">TaxiTaxi</div>
       </flex>
-      <flex id="header-links" alignitems="center" jcon="spb">
-        <a class="header-link">Home</a>
-        <a class="header-link">Service</a>
-        <a class="header-link">Security</a>
-        <a class="header-link">About</a>
-        <a class="header-link">Contact Us</a>
+      <flex id="header-links">
+        <input type="checkbox" id="burger-checkbox">
+        <label class="header-burger" for="burger-checkbox">
+          <span class="burger"></span>
+        </label>
+        <flex id="header-links-links" jcon="spb">
+          <a class="header-link">Home</a>
+          <a class="header-link">Service</a>
+          <a class="header-link">Security</a>
+          <a class="header-link">About</a>
+          <a class="header-link">Contact Us</a>
+        </flex>
       </flex>
       <flex id="account">
         <div id="login">Login</div>
@@ -46,7 +51,7 @@
         <div class="app-button"><i class="fa-brands fa-apple"></i> App Store</div>
         <div class="app-button"><i class="fa-brands fa-google-play"></i> Play Market</div>
       </flex>
-      <flex id="download-count" alignitems="center" jcon="center">
+      <flex id="download-count" jcon="center">
         <div id="download-pfps">
           <img class="download-pfp" src='./img/pfps/kovalski-22.jpg'></img>
           <img class="download-pfp" src='./img/pfps/user-5729201.jpeg'></img>
@@ -59,7 +64,7 @@
       </flex>
     </flex>
   </div>
-  <flex id="pagination-page" dir="column" alignitems="center">
+  <flex id="pagination-page" dir="column">
     <div id="pagination-header">Choose from a variety of options</div>
     <div id="filters">
       <select name="filter" id="filter" style="width:100px;text-align:left;outline:2px black">
@@ -76,7 +81,7 @@
       </select>
       <input id="search" placeholder="Search...">
     </div>
-    <flex id="pagination" alignitems="center" jcon="spr">
+    <flex id="pagination" jcon="spr">
       <flex class="pagination-card">
         <div class="pagination-card-title"></div>
         <div class="pagination-card-type"></div>
@@ -86,31 +91,57 @@
         <div class="pagination-card-type"></div>
       </flex>
     </flex>
-    <flex id="pagination-controls" alignitems="center" jcon="center">
+    <flex id="pagination-controls" jcon="center">
       <div class="pagination-control" id="pagination-prev">&lt;</div>
       <div class="pagination-control" id="pagination-next">&gt;</div>
     </flex>
   </flex>
-  <flex id="info" dir="column" alignitems="center">
-    <div id="info-header">idfk at this point 😭</div>
-    <div id="info-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Veniam omnis fugiat saepe, nemo, quisquam perferendis illo eius atque quo voluptate doloremque, possimus dolorem architecto quaerat iusto.
-      Nisi repellat mollitia iure magni. Quasi molestias corrupti voluptatum doloremque, beatae possimus reprehenderit voluptate, magnam id recusandae explicabo similique fugiat, libero nesciunt!
-      Ex dolorum eligendi molestiae molestias cupiditate inventore illo expedita veritatis dolore nam voluptates fugiat voluptatum officiis repudiandae tenetur omnis dolores nihil laboriosam hic voluptas sint voluptate, ab laborum explicabo!
-      Quibusdam tenetur reprehenderit laudantium adipisci consequuntur culpa, quam facilis tempora, quis accusantium dignissimos voluptates omnis soluta alias.
-      Unde velit ut necessitatibus eveniet alias dolores reprehenderit sint eaque neque quam, ipsum ex repellat corrupti recusandae quibusdam veniam blanditiis excepturi deleniti dignissimos odio quidem dolorum harum sunt vel! Illum harum at iure explicabo commodi voluptatum.
-      Illum iusto ea tempora placeat nesciunt voluptate nulla, maiores sunt repudiandae iure, laboriosam quisquam necessitatibus corporis minus exercitationem? Unde minus ad autem doloremque a ducimus sit laborum voluptatem voluptates impedit!
-      Error illo quis minus molestias dolorem voluptates placeat dolores, non temporibus similique quas rem libero illum ipsa sequi ullam doloribus neque laboriosam?
-      Iure obcaecati itaque tempore cupiditate ex harum ipsa, similique repellat ipsum deleniti sed libero eaque quas doloribus quibusdam unde asperiores nostrum blanditiis assumenda!
-      Deserunt aliquid illum blanditiis in accusamus adipisci saepe excepturi veritatis, similique quo exercitationem eum itaque est ea quae. Inventore, iusto dignissimos?
-      Quisquam nihil odit quas beatae qui corporis nobis quia quibusdam expedita aliquid accusamus fuga, molestias odio ab fugit totam alias tenetur voluptates sed cum aperiam assumenda.
-      Est repudiandae doloremque, error omnis saepe quae sequi minima odio provident qui nostrum voluptate exercitationem nisi eius iusto officiis modi laboriosam odit itaque numquam dignissimos ipsum perferendis vero.
-      Explicabo at harum sapiente velit, iusto id minus nostrum tempora corporis facilis illo voluptas repellendus soluta dolor ipsum dolorum libero ipsam commodi. Eligendi soluta voluptas iste? Nostrum odio incidunt accusantium, maiores ab quibusdam iure voluptates ratione magnam obcaecati eaque fuga, doloribus eum iusto quae enim vitae mollitia.
-      Debitis tempore nostrum dolorem dolore facilis et quia, expedita quidem eaque autem nulla minus explicabo, nisi placeat ad in veniam ipsa reprehenderit voluptates ducimus cum! Blanditiis saepe earum sapiente ullam quaerat,
-      voluptates et ipsa, modi consectetur dolores excepturi corrupti nostrum dicta similique iusto fugit non esse magnam quis cum iure, id aperiam est ducimus.
-      Fugiat aliquam numquam molestias animi laudantium libero nam minima quis deserunt, sapiente ut dolores voluptatibus voluptatem assumenda provident soluta blanditiis quo natus quasi cumque ducimus eius quibusdam? Harum eveniet illo pariatur, nesciunt et quidem consectetur atque beatae provident error!
-    </div>
+  <flex id="info" dir="column">
+    <div id="info-header">Our Benefits</div>
+    <flex id="info-list" jcon="center" style="flex-wrap:wrap">
+      <div class="info-item">
+        <div class="info-header">
+          Available 24/7
+        </div><div class="info-text">
+          There's always a taxi for you, even in the middle of the night.
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-header">
+          Cost Estimation
+        </div><div class="info-text">
+          Get an estimated fare before you book to plan your budget.
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-header">
+          Referral Program
+        </div><div class="info-text">
+          Invite a friend to TaxiTaxi for a discount off of your (and their) next ride.
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-header">
+          Secure Payments
+        </div><div class="info-text">
+          Enjoy cashless payments using encrypted, secure methods within the app.
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-header">
+          Airport Transfers
+        </div><div class="info-text">
+          Reliable and timely airport pickups and drop-offs. Start or end your trip with ease.
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-header">
+          Safety Features
+        </div><div class="info-text">
+          Driver verification, emergency contacts, and ride sharing ensure your safety.
+        </div>
+      </div>
+    </flex>
   </flex>
   <script src="https://kit.fontawesome.com/6d7cb93199.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

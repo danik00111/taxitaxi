@@ -18,7 +18,7 @@
   user-select: none;
 } #landing {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: rgb(242,170,40);
   background-image: url('./img/landing-taxi.jpeg');
   background-size: cover;
@@ -54,11 +54,11 @@
   color: black;
   cursor: pointer;
 } #main-text {
-  font-size: 5em;
+  font-size: 7vw;
 } #main-text-highlight {
   color: lightskyblue;
 } #subtext {
-  font-size: 2em;
+  font-size: 4vw;
   margin-top: 32px;
 } #app-buttons {
   margin-top: 24px;
@@ -121,9 +121,18 @@
   transition: box-shadow 0.5s;
   box-shadow: inset 0 0 4px 4px gray;
 } #info {
-  height: 100vh;
-  background: #111;
-  color: #aaa;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #ff0, #f90);
+  color: black;
 } #info-header {
-  font-size: 3em;
+  font-size: 4em;
+  margin-top: 32px;
+} .info-item {
+  background: linear-gradient(to bottom right, #f90, #ff0);
+  width: 400px;
+  padding: 32px;
+  margin: 32px;
+  border-radius: 32px;
+} .info-header {
+  font-size: 2em;
 }
