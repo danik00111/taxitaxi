@@ -135,4 +135,49 @@
   border-radius: 32px;
 } .info-header {
   font-size: 2em;
+} #footer {
+  background: black;
+  color: white;
+} #footer-title {
+  margin-top: 64px;
+  font-size: 4vw;
+} #footer-title-link {
+  background: white;
+  color: black;
+  padding: 8px;
+  border-radius: 32px;
+  cursor: pointer;
+} .burgers {
+  display: none;
+} @media (max-width: 1000px) {
+  #header-links-links {
+    display: none;
+  } .burgers {
+    display: block;
+  } #header-burger {
+    width: 20px;
+    height: 20px;
+  } #burger {
+    width: 20px;
+    height: 2px;
+    background: white;
+    position: relative;
+    top: 9px;
+  } #burger::before {
+    content: '';
+    position: relative;
+    display: block;
+    top: 4px;
+    width: 20px;
+    height: 2px;
+    background: white;
+  } #burger::after {
+    content: '';
+    position: relative;
+    display: block;
+    bottom: 6px;
+    width: 20px;
+    height: 2px;
+    background: white;
+  }
 }
