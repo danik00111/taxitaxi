@@ -92,7 +92,7 @@ document.getElementById('pagination-next').onclick = ()=>{
 };
 document.getElementById('filter').onchange = ()=>{
   currpage=1;
-  perpage = 2 + (lookup.mark.includes(document.getElementById('filter').value));
+  perpage = 3 + !(lookup.mark.includes(document.getElementById('filter').value));
   upd();
 };
 document.getElementById('search').oninput = _.debounce(upd,250);

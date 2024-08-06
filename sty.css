@@ -7,6 +7,8 @@
       url('./font/MonografTextBold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+} html {
+  background: #111;
 } * {
   margin: 0;
   padding: 0;
@@ -23,14 +25,16 @@
   background-image: url('./img/landing-taxi.jpeg');
   background-size: cover;
   color: hsl(0, 0%, 100%);
-  box-shadow: inset black 0px 160px 128px -64px;
 } #landing-texts {
-  margin-top: 64px;
   margin-left: 32px;
   margin-right: 32px;
   text-shadow: 1px 1px 3px black;
 } #header {
-  padding: 24px 64px;
+  padding: 24px 24px;
+  width: 100%;
+  position: fixed;
+  box-shadow: inset black 0px 70px 40px -40px;
+  color: white;
 } .header-link {
   padding: 0px 24px;
   cursor: pointer;
@@ -54,6 +58,7 @@
   color: black;
   cursor: pointer;
 } #main-text {
+  margin-top: 64px;
   font-size: 7vw;
 } #main-text-highlight {
   color: lightskyblue;
@@ -83,6 +88,7 @@
   font-size: 3em;
   margin-top: 32px;
 } #pagination-page {
+  background: whitesmoke;
   width: 100vw;
 } #filters {
   margin: 32px;
@@ -92,8 +98,9 @@
   margin: 0px 16px;
   height: 24px;
 } .pagination-card {
-  width: 384px;
-  height: 384px;
+  width: 256px;
+  height: 256px;
+  margin: 8px;
   box-shadow: 0 0 64px 16px lightgray;
   border-radius: 32px;
   align-items: center;
@@ -136,8 +143,9 @@
 } .info-header {
   font-size: 2em;
 } #footer {
-  background: black;
+  background: #111;
   color: white;
+  min-width: 100vh;
 } #footer-title {
   margin-top: 64px;
   font-size: 4vw;
@@ -149,6 +157,10 @@
   cursor: pointer;
 } .burgers {
   display: none;
+} @media (max-width: 800px) {
+  #pagination {
+    flex-direction: column;
+  }
 } @media (max-width: 1000px) {
   #header-links-links {
     display: none;
@@ -179,5 +191,16 @@
     width: 20px;
     height: 2px;
     background: white;
+  } #burger-checkbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+  } body:has(#burger-checkbox:checked) #header-links-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
   }
 }

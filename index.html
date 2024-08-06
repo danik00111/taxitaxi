@@ -17,30 +17,30 @@
   <link rel="stylesheet" href="./sty.css">
 </head>
 <body>
-  <div id="landing">
-    <flex id="header" jcon="spb">
-      <flex id="brand-title">
-        <i id="brand-logo" class="fa-solid fa-car"></i>
-        <div id="brand-name">TaxiTaxi</div>
-      </flex>
-      <flex id="header-links">
-        <input type="checkbox" id="burger-checkbox" class="burgers" style="display:none">
-        <label id="header-burger" for="burger-checkbox" class="burgers">
-          <span id="burger" class="burgers"></span>
-        </label>
-        <flex id="header-links-links" jcon="spb">
-          <a class="header-link">Home</a>
-          <a class="header-link">Service</a>
-          <a class="header-link">Security</a>
-          <a class="header-link">About</a>
-          <a class="header-link">Contact Us</a>
-        </flex>
-      </flex>
-      <flex id="account">
-        <div id="login">Login</div>
-        <div id="sign-up">Sign Up</div>
+  <flex id="header" jcon="spb">
+    <flex id="brand-title">
+      <i id="brand-logo" class="fa-solid fa-car"></i>
+      <div id="brand-name">TaxiTaxi</div>
+    </flex>
+    <flex id="header-links">
+      <input type="checkbox" id="burger-checkbox" class="burgers" style="display:none">
+      <label id="header-burger" for="burger-checkbox" class="burgers">
+        <span id="burger" class="burgers"></span>
+      </label>
+      <flex id="header-links-links" jcon="spb">
+        <a class="header-link">Home</a>
+        <a class="header-link">Service</a>
+        <a class="header-link">Security</a>
+        <a class="header-link">About</a>
+        <a class="header-link">Contact Us</a>
       </flex>
     </flex>
+    <flex id="account">
+      <div id="login">Login</div>
+      <div id="sign-up">Sign Up</div>
+    </flex>
+  </flex>
+  <div id="landing">
     <flex id="landing-texts" dir="column" jcon="spr">
       <div id="main-text" style="text-transform:capitalize">
         Always there to<br>take you&nbsp;<span id="main-text-highlight">Anywhere</span>
@@ -80,7 +80,7 @@
       </select>
       <input id="search" placeholder="Search...">
     </div>
-    <flex id="pagination" jcon="spr">
+    <flex id="pagination" jcon="center">
       <flex class="pagination-card">
         <div class="pagination-card-title"></div>
         <div class="pagination-card-type"></div>
@@ -137,13 +137,16 @@
         <div class="info-header">
           Safety Features
         </div><div class="info-text">
-          Driver verification, emergency contacts, and ride sharing ensure your safety.
+          Driver verification, and emergency contacts ensure your safety.
         </div>
       </div>
     </flex>
   </flex>
   <flex id="footer" dir="column">
     <div id="footer-title">Have any questions? <span id="footer-title-link">Let us know</span>.</div>
+    <flex id="footer-links">
+      <a href=""></a>
+    </flex>
   </flex>
   <script src="https://kit.fontawesome.com/6d7cb93199.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
